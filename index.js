@@ -18,8 +18,8 @@ let createEmployeeRecords = function (employeeRowData) {
 };
 
 // Function to log a time in event for an employee
-let createTimeInEvent = function (employee, dateStamp) {
-  let [date, hour] = dateStamp.split(" ");
+const createTimeInEvent = (employee, dateStamp) => {
+  const [date, hour] = dateStamp.split(" ");
 
   employee.timeInEvents.push({
     type: "TimeIn",
